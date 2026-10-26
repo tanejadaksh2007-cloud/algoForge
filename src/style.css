@@ -3012,9 +3012,9 @@ a.topic-card {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 50% 25%, rgba(10, 14, 26, 0.7) 0%, rgba(10, 14, 26, 0.92) 85%);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: radial-gradient(circle at 50% 25%, rgba(10, 14, 26, 0.32) 0%, rgba(10, 14, 26, 0.7) 85%);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
   pointer-events: none;
   z-index: 2;
 }
@@ -3026,8 +3026,7 @@ a.topic-card {
 
 .dsa-bg-dashboard {
   position: fixed;
-  opacity: 0.38;
-  filter: blur(1.5px);
+  opacity: 0.55;
 }
 
 /* Background Cyber Mesh */
