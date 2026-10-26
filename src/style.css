@@ -3007,6 +3007,18 @@ a.topic-card {
   z-index: 0;
 }
 
+/* Frosted glass blur veil over background graphics */
+.dsa-bg-canvas::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 25%, rgba(10, 14, 26, 0.7) 0%, rgba(10, 14, 26, 0.92) 85%);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  pointer-events: none;
+  z-index: 2;
+}
+
 .dsa-bg-auth {
   position: absolute;
   min-height: 100vh;
@@ -3014,7 +3026,8 @@ a.topic-card {
 
 .dsa-bg-dashboard {
   position: fixed;
-  opacity: 0.65;
+  opacity: 0.38;
+  filter: blur(1.5px);
 }
 
 /* Background Cyber Mesh */
@@ -3034,10 +3047,10 @@ a.topic-card {
 /* Binary Tree Graphic */
 .dsa-art-tree {
   position: absolute;
-  top: 50px;
-  left: max(20px, calc(50% - 560px));
-  width: 330px;
-  max-width: 38vw;
+  top: 40px;
+  left: max(10px, calc(50% - 640px));
+  width: 310px;
+  max-width: 32vw;
   filter: drop-shadow(0 0 24px rgba(255, 74, 110, 0.22));
   animation: dsaFloat1 10s ease-in-out infinite;
   transition: opacity 0.3s ease;
@@ -3053,9 +3066,9 @@ a.topic-card {
 .dsa-art-graph {
   position: absolute;
   bottom: 40px;
-  right: max(20px, calc(50% - 540px));
-  width: 310px;
-  max-width: 36vw;
+  right: max(20px, calc(50% - 560px));
+  width: 300px;
+  max-width: 34vw;
   filter: drop-shadow(0 0 24px rgba(249, 115, 22, 0.22));
   animation: dsaFloat2 12s ease-in-out infinite;
   transition: opacity 0.3s ease;
@@ -3071,7 +3084,7 @@ a.topic-card {
 .dsa-art-array {
   position: absolute;
   bottom: 80px;
-  left: max(40px, calc(50% - 530px));
+  left: max(30px, calc(50% - 580px));
   background: rgba(18, 22, 34, 0.75);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
@@ -3185,31 +3198,31 @@ a.topic-card {
 }
 .badge-2 {
   top: 36%;
-  left: max(20px, calc(50% - 550px));
+  left: max(20px, calc(50% - 580px));
   animation: dsaFloat2 11s ease-in-out infinite 1s;
   border-color: rgba(255, 74, 110, 0.35);
 }
 .badge-3 {
   top: 72%;
-  left: max(30px, calc(50% - 520px));
+  left: max(30px, calc(50% - 540px));
   animation: dsaFloat1 9s ease-in-out infinite 2s;
   border-color: rgba(16, 185, 129, 0.35);
 }
 .badge-4 {
   top: 82%;
-  right: max(30px, calc(50% - 460px));
+  right: max(30px, calc(50% - 480px));
   animation: dsaFloat2 10s ease-in-out infinite 0.5s;
   border-color: rgba(249, 115, 22, 0.35);
 }
 .badge-5 {
-  top: 12%;
-  left: max(40px, calc(50% - 320px));
+  top: 8%;
+  right: max(40px, calc(50% - 440px));
   animation: dsaFloat1 13s ease-in-out infinite 1.5s;
   border-color: rgba(91, 156, 246, 0.35);
 }
 .badge-6 {
   top: 58%;
-  right: max(20px, calc(50% - 560px));
+  right: max(20px, calc(50% - 580px));
   animation: dsaFloat2 10.5s ease-in-out infinite 2.5s;
   border-color: rgba(255, 74, 110, 0.35);
 }
