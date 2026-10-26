@@ -3007,8 +3007,8 @@ a.topic-card {
   z-index: 0;
 }
 
-/* Frosted glass blur veil over background graphics */
-.dsa-bg-canvas::after {
+/* Frosted glass blur veil only for dashboard background */
+.dsa-bg-dashboard::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -3019,9 +3019,16 @@ a.topic-card {
   z-index: 2;
 }
 
+/* Sign In / Login / Sign Up auth background: 100% crisp, zero blur */
 .dsa-bg-auth {
   position: absolute;
   min-height: 100vh;
+  opacity: 0.85;
+  filter: none;
+}
+
+.dsa-bg-auth::after {
+  display: none !important;
 }
 
 .dsa-bg-dashboard {
