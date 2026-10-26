@@ -56,6 +56,19 @@ export default function FaangQuestionCard({ question, isOpen, onToggle }) {
         </div>
 
         <span className={`q-tag t-${question.tag}`}>{question.tag}</span>
+        {link && (
+          <a
+            className="q-lc-direct-btn"
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+            title="Open on LeetCode without seeing hints"
+            aria-label={`Open ${question.name} on LeetCode without seeing hints`}
+          >
+            <span className="q-lc-icon">↗</span> LeetCode
+          </a>
+        )}
         <span className={`q-chevron ${isOpen ? 'open' : ''}`}>›</span>
       </div>
 
